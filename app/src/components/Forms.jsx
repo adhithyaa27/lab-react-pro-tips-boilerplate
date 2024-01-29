@@ -55,8 +55,8 @@ function Forms() {
   return (
     <div className="parent">
       <form onSubmit={handleSubmit}>
-        <div>{formSubmit && <p>Registration Successuful</p>}</div>
-        <label htmlFor="firstName">Enter Name</label>
+        <div>{formSubmit && <p>REGISTRATION SUCCESSFUL</p>}</div>
+        <label htmlFor="firstName">First Name</label>
         <input
           type="text"
           name="firstName"
@@ -65,7 +65,7 @@ function Forms() {
         />
         {formError.firstName ? <p>{formError.firstName}</p> : null}
 
-        <label htmlFor="lastName">Enter Last Name</label>
+        <label htmlFor="lastName">Last Name</label>
         <input
           type="text"
           name="lastName"
@@ -75,7 +75,7 @@ function Forms() {
         {formError.lastName ? <p>{formError.lastName}</p> : null}
 
 
-        <label htmlFor="email">Enter Email</label>
+        <label htmlFor="email"> Email-Id</label>
         <input
           type="email"
           name="email"
@@ -84,7 +84,7 @@ function Forms() {
         />
         {formError.email ? <p>{formError.email}</p> : null}
 
-        <label htmlFor="phoneNumber">Enter Contact</label>
+        <label htmlFor="phoneNumber">Contact Number</label>
         <input
           type="number"
           name="phoneNumber"
@@ -93,7 +93,7 @@ function Forms() {
         />
         {formError.phoneNumber != "" ? <p>{formError.phoneNumber}</p> : null}
 
-        <input type="submit" value={"Register"} className="btn"/>
+        <input type="submit" value={"REGISTER"} className="btn"/>
       </form>
     </div>
   );
